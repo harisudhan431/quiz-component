@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .center{
+    background-color:aliceblue;
+    text-align: center;
+    padding: 50px;
+}
+span {
+    background-color: red;
+    padding: 10px;
+    font-size: 25px;
+    margin-left: -10px;
+}
+button{
+    background-color: white;
+    border: 1px solid white;
+    margin: 5px;
+    padding: 10px;
+    font-size: 25px;
+    padding-right: 90px;
+    border-radius:5px;
+}
+    </style>
+</head>
+<body>
+    <div class="center">
+        <h1>In web design,what does CSS stand for?</h1>
+        <button onclick="wrong1()" id="btn1" "><span>A</span> Cascading static source</button><br>
+        <button onclick="wrong2()" id="btn2" style="padding-right: 100px;" ><span>B</span>  Cascading style  survey</button><br>
+        <button onclick="wrong3()" id="btn3" ><span>C</span>  Cascading source  sheet</button><br>
+        <button onclick="correct()" id="btn" style="padding-right: 115px;" ><span>D</span>  Cascading style   sheet</button>
+</div>
+<script>
+    function wrong1(){
+    document.getElementById("btn1").style.background="red";
+}
+function wrong2(){
+    document.getElementById("btn2").style.background="red";
+}
+function wrong3(){
+    document.getElementById("btn3").style.background="red";
+}
+function correct(){
+    document.getElementById("btn").style.background="green";
+}
+</script>
+</body>
+</html>
